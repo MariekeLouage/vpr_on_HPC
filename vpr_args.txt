@@ -1,5 +1,5 @@
 ~/VTR/vtr-verilog-to-routing/vtr_flow/arch/titan/stratixiv_arch.timing.xml
-$OUTPUT_FILE
+$INPUT_FILE
 --echo_file
 on
 --write_block_usage
