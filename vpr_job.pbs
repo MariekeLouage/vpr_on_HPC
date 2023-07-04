@@ -107,8 +107,8 @@
   # directory where you submitted the job)
 
 echo Start Job
-INPUT_FILE = $0
-CIRCUIT = $1
+INPUT_FILE = $filepath
+CIRCUIT = $filename
 #make output dir
 OUTPUT_FOLDER = $VSC_DATA/vpr/output/$CIRCUIT
 mkdir OUTPUT_FOLDER

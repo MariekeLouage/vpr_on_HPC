@@ -6,6 +6,7 @@ for filepath in $VSC_DATA/vpr/input/blif/*.blif; do
 		CIRCUIT="${filename%.*}"
 		
 		echo $CIRCUIT
-		qsub -F "$filepath $filename" vpr_job.pbs
+		#-F "$filepath $filename"
+		qsub  vpr_job.pbs
 
 done
