@@ -35,11 +35,13 @@
 #PBS -e stderr.$PBS_JOBID
 
 echo Start Job
-INPUT_FILE = $filepath
-CIRCUIT = $filename
+INPUT_FILE=$filepath
+CIRCUIT=$filename
 #make output dir
-OUTPUT_FOLDER = $VSC_DATA/vpr/output/$CIRCUIT
+
+OUTPUT_FOLDER=$VSC_DATA/vpr/output/$CIRCUIT
 echo $OUTPUT_FOLDER
+
 mkdir $OUTPUT_FOLDER
 date
 cd $OUTPUT_FOLDER  
