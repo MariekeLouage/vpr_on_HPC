@@ -1,4 +1,4 @@
-~/VTR/vtr-verilog-to-routing/vtr_flow/arch/titan/stratixiv_arch.timing.xml
+$VSC_HOME/VTR/vtr-verilog-to-routing/vtr_flow/arch/titan/stratixiv_arch.timing.xml
 $INPUT_FILE
 --echo_file
 on

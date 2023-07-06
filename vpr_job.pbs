@@ -17,7 +17,7 @@
   # if you want to be sure to get your private node, simply claim all memory ;-)
 
 	# Specifies the amount of memory you need for a job. 
-#PBS -l mem=80gb
+#PBS -l mem=10gb
 
 
 
@@ -25,7 +25,7 @@
 	# If not used a default of a few minutes is used. 
 	# Use this flag to prevent jobs that go bad running for hundreds of hours. 
 	# Format is HH:MM:SS
-#PBS -l walltime=12:00:00
+#PBS -l walltime=05:00:00
 
   # redirect standard output (-o) and error (-e) (optional)
   # if omitted, the name of the job (specified by -N) or
@@ -35,17 +35,17 @@
 #PBS -e stderr.$PBS_JOBID
 
 echo Start Job
-INPUT_FILE=$filepath
-CIRCUIT=$filename
-#make output dir
+echo $filepath
 
-OUTPUT_FOLDER=$VSC_DATA/vpr/output/$CIRCUIT
+export OUTPUT_FOLDER=$VSC_DATA/vpr/output/$filename
 echo $OUTPUT_FOLDER
-
+echo $INPUT_FILE
 mkdir $OUTPUT_FOLDER
 date
+echo "$(envsubst<~/vpr_on_HPC/vpr_args.txt)"
 cd $OUTPUT_FOLDER  
-~/VTR/vtr-verilog-to-routing/vpr/vpr "$(< vpr_args.txt)"
+pwd
+~/VTR/vtr-verilog-to-routing/vpr/vpr $(envsubst<~/vpr_on_HPC/vpr_args.txt)
 echo End Job
 
 
