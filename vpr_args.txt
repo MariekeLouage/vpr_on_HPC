@@ -14,5 +14,4 @@ $OUTPUT_FOLDER/timing_summary.xml
 $OUTPUT_FOLDER/first_iter_timing.txt
 --full_stats
 on
---outfile_prefix
-"large_"
+
