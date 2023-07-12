@@ -4,8 +4,6 @@ $INPUT_FILE
 on
 --write_block_usage
 $OUTPUT_FOLDER/block_usage.xml
---write_rr_graph
-$OUTPUT_FOLDER/rr_graph.xml
 --post_place_timing_report
 $OUTPUT_FOLDER/post_place_timing.txt
 --write_timing_summary
@@ -14,4 +12,7 @@ $OUTPUT_FOLDER/timing_summary.xml
 $OUTPUT_FOLDER/first_iter_timing.txt
 --full_stats
 on
-
+--place_algorithm bounding_box
+--target_utilization 0.8
+--max_criticality 0
+--criticality_exp 0
