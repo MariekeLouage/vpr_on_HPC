@@ -16,3 +16,4 @@ on
 --target_utilization 0.8
 --max_criticality 0
 --criticality_exp 0
+--route_chan_width 300

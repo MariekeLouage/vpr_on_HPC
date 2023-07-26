@@ -41,6 +41,8 @@ export OUTPUT_FOLDER=$VSC_DATA/vpr/output/$filename
 echo $OUTPUT_FOLDER
 echo $INPUT_FILE
 mkdir $OUTPUT_FOLDER
+cp vpr_args.txt $OUTPUT_FOLDER
+cp $INPUT_FILE $OUTPUT_FOLDER
 date
 echo "$(envsubst<~/vpr_on_HPC/vpr_args.txt)"
 cd $OUTPUT_FOLDER  
