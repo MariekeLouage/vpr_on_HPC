@@ -1,6 +1,6 @@
 $VSC_HOME/VTR/vtr-verilog-to-routing/vtr_flow/arch/titan/stratixiv_arch.timing.xml
 $INPUT_FILE
---place
+--pack
 --write_block_usage
 $OUTPUT_FOLDER/block_usage.xml
 --post_place_timing_report
