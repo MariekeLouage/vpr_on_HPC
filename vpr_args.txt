@@ -1,7 +1,6 @@
 $VSC_HOME/VTR/vtr-verilog-to-routing/vtr_flow/arch/titan/stratixiv_arch.timing.xml
 $INPUT_FILE
---echo_file
-on
+--place
 --write_block_usage
 $OUTPUT_FOLDER/block_usage.xml
 --post_place_timing_report
@@ -10,10 +9,13 @@ $OUTPUT_FOLDER/post_place_timing.txt
 $OUTPUT_FOLDER/timing_summary.xml
 --router_first_iter_timing_report
 $OUTPUT_FOLDER/first_iter_timing.txt
---full_stats
-on
---place_algorithm bounding_box
---target_utilization 0.8
---max_criticality 0
---criticality_exp 0
---route_chan_width 300
+--place_algorithm
+bounding_box
+--target_utilization
+0.8
+--max_criticality
+0
+--criticality_exp
+0
+--route_chan_width
+300
