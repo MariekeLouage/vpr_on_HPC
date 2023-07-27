@@ -5,7 +5,7 @@
   #   b        when job begins
   #   e        when job ends
   #   M        your e-mail address (should always be specified)
-#PBS -m ae
+#PBS -m a
 #PBS -M marieke.louage@ugent.be
 
   # specification (required!)
@@ -49,5 +49,3 @@ cd $OUTPUT_FOLDER
 pwd
 ~/VTR/vtr-verilog-to-routing/vpr/vpr $(envsubst<~/vpr_on_HPC/vpr_args.txt)
 echo End Job
-
-
