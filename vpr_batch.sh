@@ -1,5 +1,6 @@
 #!/bin/bash
-
+rm -r std*
+rm -r $VSC_DATA/vpr/output/*
 for filepath in $VSC_DATA/vpr/input/blif/*.blif; do
 		
 		filename=$(basename -- "$filepath")

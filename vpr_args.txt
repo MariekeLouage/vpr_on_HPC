@@ -8,11 +8,5 @@ $OUTPUT_FOLDER/post_place_timing.txt
 $OUTPUT_FOLDER/timing_summary.xml
 --router_first_iter_timing_report
 $OUTPUT_FOLDER/first_iter_timing.txt
---place_algorithm
-bounding_box
 --target_utilization
 0.8
---max_criticality
-0
---criticality_exp
-0
